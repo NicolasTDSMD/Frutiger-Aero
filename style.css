@@ -89,14 +89,16 @@
             }
             .bt:hover {
                 transform: scale(1.05);
-                filter: brightness(1.12); 
+                filter: brightness(1.15); 
                 box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
             }
             .bt:active {
                 transform: scale(0.96);   
                 filter: brightness(0.95);  
             }
-
+            .btcre:hover,.btdes:hover,.bthis:hover,.btini:hover,.btnews:hover {
+                transform: translate(8px, 6px);
+            }
             .btini {
                 background: linear-gradient( #86cae3, #6fcaf5 55%, #0a6aaa);
             }
@@ -109,6 +111,10 @@
             .btcre {
                 background: linear-gradient( #e3be86, #f5c26f 55%, #aa7d0a);
             }
+            .btnews {
+                background: linear-gradient(#a26ae6, #9f6ff5 55%, #4a0a6a);
+            }
+
 
             a {
                 text-decoration: none;
@@ -162,3 +168,60 @@
                 display: inline-block;
                 margin: 40px auto;
             }
+
+          forms {
+                background: linear-gradient(160deg, #e4f5fd, #51adb9);  
+                border: 1px solid #b0c4de;
+                border-radius: 12px;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+                transition: transform 0.5s ease; 
+                width: fit-content;
+                height: fit-content;
+                min-width: 600px;
+                max-width: 600px;
+                min-height: 400px;
+                padding: 20px;
+          }
+          .forms-describle {
+                font-size: 16px; 
+                color: #1a3a4a; 
+                margin-top: 5px;
+                margin-bottom: 10px;
+                text-align: center;
+                max-width: 50%;       
+                width: 50px;          
+                word-wrap: break-word;
+            }
+          .forms-container {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 20px;
+                margin-top: 80px;
+            }
+            forms:hover{
+                transform: scale(1.05);
+            }
+            label {
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            input[type="text"],input[type="email"]{
+                background: #fff6f6;
+                width: 80%;
+                padding: 8px;
+                margin-top: 5px;
+                box-sizing: border-box;
+                border: 1px solid #cccccc;
+                border-radius: 6px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+            }
+
+            
+
+            

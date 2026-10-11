@@ -60,12 +60,22 @@
                 width: 100%;
                 text-align: center;
                 text-transform: uppercase;
-                letter-spacing: 15px;
+                letter-spacing: 5px;
                 font-size: 24px;
                 font-weight: bold;
                 font-family: 'Noto Sans', sans-serif;
                 color: #f6f8fd;
                 text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+            }
+            .letter_animation {
+                display: inline-block;
+                transition: transform 0.35s ease-in-out;
+                cursor: pointer;
+            }
+            .letter_animation:hover {
+                transform: scale(1.35);
+
             }
             .bt {
                 display: flex;
@@ -220,6 +230,7 @@
                 border: 1px solid #cccccc;
                 border-radius: 6px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+                
             }
 
             

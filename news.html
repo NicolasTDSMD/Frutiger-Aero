@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,17 +38,26 @@
                 <a><button class="bt btnews">Newsletter</button></a>
             </div>
         </div>
-        <div class="forms-container">
-            <forms>
+        <div class="form-container">
+            <form>
                 <h1 align="center">Newsletter</h1>
-                <span class="forms-describle ">Inscreva-se em nossa newsletter para receber as melhores novidades, curiosidades do design dos anos 2000 e doses diárias de otimismo digital diretamente no teu e-mail.<br><br><b> Preencha os dados abaixo:</b></span>
+                <span class="form-describle ">Inscreva-se em nossa newsletter para receber as melhores novidades, curiosidades do design dos anos 2000 e doses diárias de otimismo digital diretamente no teu e-mail.<br><br><b> Preencha os dados abaixo:</b></span>
                 <br><br>
                 <label for="nome">Nome:</label><br>
                 <input type="text" name="nome" id="nome" size="45" maxlength="55" minlength="3" required placeholder="Insira seu Nome completo" ><br><br>
                 <label for="email">E-mail:</label><br>
-                <input type="email" name="email" id="email"  required placeholder="seuemail@dominio.com">
+                <input type="email" name="email" id="email"  required placeholder="seuemail@dominio.com"><br><br>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" pattern="[0-9]*" ><br><br>
+                <label for="obs">Observações:</label><br>
+                <textarea name="obs" id="obs" maxlength="100" placeholder="Adicione suas observações aqui..." rows="7"></textarea><br><br>
+                <label for="termos">
+                    <input type="checkbox" name="termos" id="termos" required>
+                    <span class="form-describle ">Li e concordo com os <a class="termos" href="termos.html" target="_blank"> termos de uso </a> </span> <br><br>
+                </label>
+                <button type="submit">Enviar</button>
 
-            </forms>
+            </form>
         </div>
     </body>
 </html>

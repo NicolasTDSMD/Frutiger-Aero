@@ -86,7 +86,7 @@
                 cursor: pointer;
                 outline: none;
                 border-radius: 20px;
-                overflow: hidden;
+                overflow: hidden; 
                 border: none;
                 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 0px 6px rgba(0, 0, 0, 0.1);
                 transition: all 0.5s ease;
@@ -179,7 +179,7 @@
                 margin: 40px auto;
             }
 
-          forms {
+          form {
                 background: linear-gradient(160deg, #e4f5fd, #51adb9);  
                 border: 1px solid #b0c4de;
                 border-radius: 12px;
@@ -194,7 +194,7 @@
                 min-height: 400px;
                 padding: 20px;
           }
-          .forms-describle {
+          .form-describle {
                 font-size: 16px; 
                 color: #1a3a4a; 
                 margin-top: 5px;
@@ -204,7 +204,7 @@
                 width: 50px;          
                 word-wrap: break-word;
             }
-          .forms-container {
+          .form-container {
                 display: flex;
                 flex-direction: row;
                 gap: 20px;
@@ -213,7 +213,7 @@
                 padding: 20px;
                 margin-top: 80px;
             }
-            forms:hover{
+            form:hover{
                 transform: scale(1.05);
             }
             label {
@@ -221,18 +221,83 @@
                 font-weight: bold;
             }
 
-            input[type="text"],input[type="email"]{
+            input[type="text"],input[type="email"],input[type="tel"], textarea {
                 background: #fff6f6;
                 width: 80%;
                 padding: 8px;
                 margin-top: 5px;
                 box-sizing: border-box;
-                border: 1px solid #cccccc;
+                border: 1.5px solid #cccccc;
                 border-radius: 6px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-                
+                box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5); 
             }
 
-            
+            textarea {
+                max-width: 100%; 
+                box-sizing: border-box; 
+                resize: vertical; 
+                min-height: 100px;
+            }
 
+            .termos {
+                color: #1a3a4a;
+                text-decoration: underline;
+            }
             
+  
+            button {
+                background: linear-gradient(#96e6a1, #4ec5f1 55%, #0b559f);
+                cursor: pointer;
+                border-radius: 20px;
+                box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5); 
+                padding: 15px 22px;
+                width: fit-content;
+                text-decoration: none;
+                color: white;
+                font-size: 16px;
+                text-align: center;
+                font-family: 'Noto Sans', sans-serif;
+                border-width: 2.5px;
+                border-style: solid;
+                border-color: black;
+            }
+
+            button:hover {
+                transform: scale(1.005);
+                filter: brightness(1.15); 
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+                animation: buttom 0.65s linear infinite;
+            }
+
+            @keyframes buttom {
+                0% {
+                    border-top-color: red;
+                    border-right-color: black;
+                    border-bottom-color: black;
+                    border-left-color: black;
+                }
+                25% {
+                    border-top-color: black;
+                    border-right-color: red;
+                    border-bottom-color: black;
+                    border-left-color: black;
+                }
+                50% {
+                    border-top-color: black;
+                    border-right-color: black;
+                    border-bottom-color: red;
+                    border-left-color: black;
+                }
+                75% {
+                    border-top-color: black;
+                    border-right-color: black;
+                    border-bottom-color: black;
+                    border-left-color: red;
+                }
+                100% {
+                    border-top-color: red;
+                    border-right-color: black;
+                    border-bottom-color: black;
+                    border-left-color: black;
+                }
+        }

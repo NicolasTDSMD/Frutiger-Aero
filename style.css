@@ -249,7 +249,7 @@
                 background: linear-gradient(#96e6a1, #4ec5f1 55%, #0b559f);
                 cursor: pointer;
                 border-radius: 20px;
-                box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5); 
+                box-shadow: 0 5px 9px rgba(255, 255, 255, 0.6);
                 padding: 15px 22px;
                 width: fit-content;
                 text-decoration: none;
@@ -259,45 +259,51 @@
                 font-family: 'Noto Sans', sans-serif;
                 border-width: 2.5px;
                 border-style: solid;
-                border-color: black;
+                border-color: rgba(255, 255, 255, 0.6);
+                margin-left: 40%;
             }
 
             button:hover {
                 transform: scale(1.005);
                 filter: brightness(1.15); 
-                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+                box-shadow: 0 6px 10px rgba(255, 255, 255, 0.6);
                 animation: buttom 0.65s linear infinite;
             }
 
             @keyframes buttom {
                 0% {
                     border-top-color: red;
-                    border-right-color: black;
-                    border-bottom-color: black;
-                    border-left-color: black;
+                    border-right-color: rgba(255, 255, 255, 0.6);
+                    border-bottom-color: rgba(255, 255, 255, 0.6);
+                    border-left-color: rgba(255, 255, 255, 0.6);
                 }
                 25% {
-                    border-top-color: black;
+                    border-top-color: rgba(255, 255, 255, 0.6);
                     border-right-color: red;
-                    border-bottom-color: black;
-                    border-left-color: black;
+                    border-bottom-color: rgba(255, 255, 255, 0.6);
+                    border-left-color: rgba(255, 255, 255, 0.6);
                 }
                 50% {
-                    border-top-color: black;
-                    border-right-color: black;
+                    border-top-color: rgba(255, 255, 255, 0.6);
+                    border-right-color: rgba(255, 255, 255, 0.6);
                     border-bottom-color: red;
-                    border-left-color: black;
+                    border-left-color: rgba(255, 255, 255, 0.6);
                 }
                 75% {
-                    border-top-color: black;
-                    border-right-color: black;
-                    border-bottom-color: black;
+                    border-top-color: rgba(255, 255, 255, 0.6);
+                    border-right-color: rgba(255, 255, 255, 0.6);
+                    border-bottom-color: rgba(255, 255, 255, 0.6);
                     border-left-color: red;
                 }
                 100% {
                     border-top-color: red;
-                    border-right-color: black;
-                    border-bottom-color: black;
-                    border-left-color: black;
+                    border-right-color: rgba(255, 255, 255, 0.6);
+                    border-bottom-color: rgba(255, 255, 255, 0.6);
+                    border-left-color: rgba(255, 255, 255, 0.6);
                 }
+        }
+
+        .forms-papper{
+            background-image: url('https://frutiger-aero.org/img/frutiger-eco-2.webp');
+            background-attachment:fixed;
         }

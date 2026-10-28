@@ -366,7 +366,7 @@
             background-attachment: fixed;
             background-size: 200vh;
         }
-        li {
+        .flashcard.detalhes li {
             list-style-image: url(images/vista_info.ico);   
         }
         .card-link {
@@ -379,4 +379,43 @@
         }
         .card-link:hover {
             color: inherit;
+        }
+        .name{
+            font-size: 20px;  
+                 color: #0a4a6a; 
+                 margin-bottom: 6px; 
+                 font-family: 'Noto Sans', sans-serif;
+        }
+        .name:hover{
+            transform: scale(1.05);
+        }
+
+        li{
+            list-style-type: square;
+            list-style-position:inside;
+        }
+
+        li:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+            text-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        }
+        .flashcardcreditos {
+            max-width: 740px;
+            max-height: 30%;
+            flex: 1 1 400px;                 
+            min-width: 280px;
+            min-height: 400px;
+            padding: 20px;
+
+            background: linear-gradient(160deg, #e4f5fd, #51adb9);
+            border: 1px solid #b0c4de;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }

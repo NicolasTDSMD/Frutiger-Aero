@@ -308,7 +308,7 @@
                 background: linear-gradient(#96e6a1, #4ec5f1 55%, #0b559f);
                 cursor: pointer;
                 border-radius: 20px;
-                box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5); 
+                box-shadow: 0 5px 9px rgba(255, 255, 255, 0.6);
                 padding: 15px 22px;
                 width: fit-content;
                 text-decoration: none;
@@ -319,39 +319,38 @@
                 border-width: 2.5px;
                 border-style: solid;
                 border-color: rgba(255, 255, 255, 0.6);
-                margin-left: 40%;
             }
 
             button:hover {
                 transform: scale(1.005);
                 filter: brightness(1.15); 
-                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+                box-shadow: 0 6px 10px rgba(255, 255, 255, 0.6);
                 animation: buttom 0.65s linear infinite;
             }
 
             @keyframes buttom {
                 0% {
                     border-top-color: red;
-                    border-right-color: black;
-                    border-bottom-color: black;
-                    border-left-color: black;
+                    border-right-color: rgba(255, 255, 255, 0.6);
+                    border-bottom-color: rgba(255, 255, 255, 0.6);
+                    border-left-color: rgba(255, 255, 255, 0.6);
                 }
                 25% {
-                    border-top-color: black;
+                    border-top-color: rgba(255, 255, 255, 0.6);
                     border-right-color: red;
-                    border-bottom-color: black;
-                    border-left-color: black;
+                    border-bottom-color: rgba(255, 255, 255, 0.6);
+                    border-left-color: rgba(255, 255, 255, 0.6);
                 }
                 50% {
-                    border-top-color: black;
-                    border-right-color: black;
+                    border-top-color: rgba(255, 255, 255, 0.6);
+                    border-right-color: rgba(255, 255, 255, 0.6);
                     border-bottom-color: red;
-                    border-left-color: black;
+                    border-left-color: rgba(255, 255, 255, 0.6);
                 }
                 75% {
-                    border-top-color: black;
-                    border-right-color: black;
-                    border-bottom-color: black;
+                    border-top-color: rgba(255, 255, 255, 0.6);
+                    border-right-color: rgba(255, 255, 255, 0.6);
+                    border-bottom-color: rgba(255, 255, 255, 0.6);
                     border-left-color: red;
                 }
                 100% {
@@ -364,5 +363,59 @@
 
         .forms-papper{
             background-image: url('https://frutiger-aero.org/img/frutiger-eco-2.webp');
-            background-attachment:fixed;
+            background-attachment: fixed;
+            background-size: 200vh;
+        }
+        .flashcard.detalhes li {
+            list-style-image: url(images/vista_info.ico);   
+        }
+        .card-link {
+            display: contents;     
+            color: inherit;       
+            font: inherit;
+            text-align: inherit;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .card-link:hover {
+            color: inherit;
+        }
+        .name{
+            font-size: 20px;  
+                 color: #0a4a6a; 
+                 margin-bottom: 6px; 
+                 font-family: 'Noto Sans', sans-serif;
+        }
+        .name:hover{
+            transform: scale(1.05);
+        }
+
+        li{
+            list-style-type: square;
+            list-style-position:inside;
+        }
+
+        li:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+            text-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        }
+        .flashcardcreditos {
+            max-width: 740px;
+            max-height: 30%;
+            flex: 1 1 400px;                 
+            min-width: 280px;
+            min-height: 400px;
+            padding: 20px;
+
+            background: linear-gradient(160deg, #e4f5fd, #51adb9);
+            border: 1px solid #b0c4de;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }

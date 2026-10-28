@@ -301,3 +301,23 @@
                     border-left-color: black;
                 }
         }
+        .name{
+            font-size: 20px;  
+                 color: #0a4a6a; 
+                 margin-bottom: 6px; 
+                 font-family: 'Noto Sans', sans-serif;
+        }
+        .name:hover{
+            transform: scale(1.05);
+        }
+
+        li{
+            list-style-type: square;
+            list-style-position:inside;
+        }
+
+        li:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+            text-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        }

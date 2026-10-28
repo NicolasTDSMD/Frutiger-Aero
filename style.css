@@ -1,3 +1,6 @@
+            html { 
+                scroll-behavior: smooth; 
+            }  
             body {
                 font-family:"Segoe UI", sans-serif;
                 background: linear-gradient(
@@ -104,7 +107,7 @@
                 box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
             }
             .bt:active {
-                transform: scale(0.96);   
+                transform: translate(8px, 6px);   
                 filter: brightness(0.95);  
             }
             .btcre:hover,.btdes:hover,.bthis:hover,.btini:hover,.btnews:hover {
@@ -134,7 +137,7 @@
                 text-align: center;
                 font-family: 'Noto Sans', sans-serif;
 
-}
+            }
             a:hover {
                 color: #ffffff;
                 text-decoration: none;
@@ -151,8 +154,8 @@
             }
 
             .flashcard {
-                box-sizing: border-box;          /* o padding entra na conta do tamanho */
-                flex: 1 1 400px;                 /* cresce, encolhe, base de 400px */
+                box-sizing: border-box;
+                flex: 1 1 400px;                 
                 min-width: 280px;
                 min-height: 400px;
                 padding: 20px;
@@ -167,6 +170,9 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+            }
+            .flashcard:active {
+                transform: scale(0.96);
             }
 
             .flashcard.largo {
@@ -191,20 +197,46 @@
                 min-height: 200px;
                 max-height: 350px; 
             }
+            .flashcard.detalhes {
+                flex: 1 1 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 20px;
+                max-width: 1400px;
+                margin: 0;
+            }
+            .flashcard.detalhes:hover {
+                transform: none;
+            }
+            .flashcard.detalhes h3 {
+                text-align: center;
+                flex: 0 0 100%;
+                margin: 0;
+            }
+            .flashcard.detalhes .card {
+                flex: 1 1 300px;         
+                min-width: 0;
+                margin: 0;
+                text-align: justify;
+            }
+            .flashcard.detalhes img {
+                flex: 0 0 40%;       
+                width: auto;
+                min-width: 250px;       
+                height: auto;
+                max-height: 350px;
+                min-height: 0;
+                margin-top: 0;
+
+            }
             .flashcard:hover {
                 transform: scale(1.05);
             }
-            .card {
-                font-size: 16px; 
-                color: #1a3a4a; 
-                margin-top: 5px;
-                display: inline-block;
-                margin-bottom: 10px;
-                text-align: justify;
-            }
-            .card2 {
-                display: inline-block;
-                margin: 40px auto;
+            .flashcards-container.det {
+                margin-top: 0;
+                margin-bottom: 0;
             }
 
           form {
@@ -333,4 +365,18 @@
             background-image: url('https://frutiger-aero.org/img/frutiger-eco-2.webp');
             background-attachment: fixed;
             background-size: 200vh;
+        }
+        li {
+            list-style-image: url(images/vista_info.ico);   
+        }
+        .card-link {
+            display: contents;     
+            color: inherit;       
+            font: inherit;
+            text-align: inherit;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .card-link:hover {
+            color: inherit;
         }
